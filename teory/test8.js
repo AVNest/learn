@@ -26,5 +26,21 @@ let answ = +prompt("hello", "");
 
 // to boolean
 // 0, '', null, undefined, NaN
-
+// 1
 let switcher = null;
+
+if (switcher) {
+    console.log("Working...");
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log("Working...");
+}
+
+// 2 
+console.log(typeof(Boolean('5')));
+
+// 3
+console.log(typeof(!!'555'));
