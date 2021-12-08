@@ -29,4 +29,14 @@ change.addEventListener('click', () => {
         localStorage.setItem('bg', 'changed');
         form.style.backgroundColor = 'red';
     }
-})
+});
+
+const persone = {
+    name: 'Alex',
+    age: 25
+};
+
+const serializedPersone = JSON.stringify(persone);
+localStorage.setItem('alex', serializedPersone);
+
+console.log(JSON.parse(localStorage.getItem('alex')));
